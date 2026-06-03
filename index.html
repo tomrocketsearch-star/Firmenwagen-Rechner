@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Firmenwagen-Rechner · Paket A · Rocket Search</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Dein Firmenwagen · Rocket Search</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,27 +32,30 @@
   .head .date{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums}
   h1{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:46px;line-height:1.05;letter-spacing:-0.025em;margin:0 0 14px;font-variation-settings:"opsz" 144}
   h1 em{font-style:italic;color:var(--accent);font-weight:400}
-  .sub{font-size:15px;color:var(--ink-2);max-width:64ch;margin:0 0 44px;line-height:1.6}
+  .sub{font-size:15px;color:var(--ink-2);max-width:64ch;margin:0 0 32px;line-height:1.6}
+  .gift-banner{background:var(--good-bg);border-radius:12px;padding:16px 22px;margin:0 0 44px;font-size:15px;color:var(--good-fg);line-height:1.55}
+  .gift-banner b{font-weight:500;font-variant-numeric:tabular-nums}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   @media (max-width:760px){.grid{grid-template-columns:1fr;gap:32px}.container{padding:32px 20px 60px}h1{font-size:36px}}
   .panel-label{font-family:'Fraunces',Georgia,serif;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:var(--ink-3);margin:0 0 20px;font-weight:500}
   .slider-row{margin-bottom:26px}
   .slider-row .lbl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
-  .slider-row .lbl span:first-child{font-size:14px;color:var(--ink-2);max-width:74%}
+  .slider-row .lbl span:first-child{font-size:14px;color:var(--ink-2);max-width:72%}
   .slider-row .lbl .val{font-size:17px;font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
   input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:var(--border-2);border-radius:2px;outline:none;margin:0}
   input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--accent);cursor:pointer;border:3px solid var(--bg);box-shadow:0 0 0 1px var(--border-2)}
   input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--accent);cursor:pointer;border:3px solid var(--bg);box-shadow:0 0 0 1px var(--border-2)}
   .cards{display:flex;flex-direction:column;gap:14px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+  .card.hero{border:2px solid var(--accent)}
   .card .c-lbl{font-size:13px;color:var(--ink-2);margin:0 0 6px}
   .card .c-num{font-family:'Fraunces',Georgia,serif;font-size:32px;font-weight:500;line-height:1;margin:0;font-variant-numeric:tabular-nums;font-variation-settings:"opsz" 144}
   .card .c-num.accent{color:var(--accent)}
   .card .c-det{font-size:13px;color:var(--ink-3);margin:8px 0 0}
-  .geschenk{margin-top:40px;background:var(--info-bg);border-radius:12px;padding:22px 26px}
-  .geschenk .g-lbl{font-family:'Fraunces',Georgia,serif;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:var(--info-fg);margin:0 0 10px;font-weight:500}
-  .geschenk p{font-size:15px;color:var(--info-fg);line-height:1.65;margin:0}
-  .geschenk b{font-weight:500}
+  .why{margin-top:40px;background:var(--info-bg);border-radius:12px;padding:22px 26px}
+  .why .g-lbl{font-family:'Fraunces',Georgia,serif;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:var(--info-fg);margin:0 0 10px;font-weight:500}
+  .why p{font-size:15px;color:var(--info-fg);line-height:1.65;margin:0}
+  .why b{font-weight:500}
   .foot{margin-top:36px;border-top:1px solid var(--border);padding-top:20px;font-size:12.5px;color:var(--ink-3);line-height:1.6;max-width:72ch}
 </style>
 </head>
@@ -59,116 +63,115 @@
 <div class="container">
 
   <div class="head">
-    <span class="brand">Rocket Search · Firmenwagen-Modell</span>
+    <span class="brand">Rocket Search · Firmenwagen</span>
     <span class="date" id="today"></span>
   </div>
 
-  <h1>Paket A — <em>das echte Geschenk</em></h1>
-  <p class="sub">Gehalt und Provision bleiben unangetastet. Den Wagen teilt ihr euch: du gibst einen festen Zuschuss obendrauf, den Rest wandelt der Mitarbeiter aus seinem Brutto-Fixum um. Sprit zahlt er selbst. Links deine Stellschrauben, rechts was es beide Seiten kostet.</p>
+  <h1>Dein Firmenwagen — <em>rechne deinen Vorteil aus</em></h1>
+  <p class="sub">Dein Gehalt und deine Provision bleiben, wie sie sind. Rocket Search legt einen festen Zuschuss obendrauf, deinen Anteil zahlst du aus deinem Brutto — also vor Steuern, und damit günstiger als aus der eigenen Tasche. Stell die Regler auf deine Situation, dann siehst du, was dich der Wagen wirklich kostet.</p>
+
+  <div class="gift-banner">Rocket Search gibt <b id="banner-zuschuss">300 €</b> im Monat dazu — das musst du nicht zurückzahlen und nicht erarbeiten. Es kommt einfach obendrauf.</div>
 
   <div class="grid">
 
     <div>
-      <p class="panel-label">Stellschrauben</p>
+      <p class="panel-label">Deine Angaben</p>
 
       <div class="slider-row">
-        <div class="lbl"><span>Bruttolistenpreis (PHEV)</span><span class="val" id="blp-out">50.000 €</span></div>
+        <div class="lbl"><span>Dein Wunsch-Wagen (Listenpreis, Plug-in-Hybrid)</span><span class="val" id="blp-out">50.000 €</span></div>
         <input id="blp" type="range" min="30000" max="80000" step="1000" value="50000">
       </div>
 
       <div class="slider-row">
-        <div class="lbl"><span>All-in-Leasingrate (ohne Sprit)</span><span class="val" id="rate-out">500 €</span></div>
+        <div class="lbl"><span>Monatliche All-in-Rate (Leasing + Versicherung + Wartung)</span><span class="val" id="rate-out">500 €</span></div>
         <input id="rate" type="range" min="300" max="800" step="10" value="500">
       </div>
 
       <div class="slider-row">
-        <div class="lbl"><span>Dein Zuschuss (echtes Geld obendrauf)</span><span class="val" id="zuschuss-out">300 €</span></div>
-        <input id="zuschuss" type="range" min="0" max="500" step="10" value="300">
-      </div>
-
-      <div class="slider-row">
-        <div class="lbl"><span>Steuer + Sozialabgaben (Grenzsatz, geschätzt)</span><span class="val" id="satz-out">40 %</span></div>
+        <div class="lbl"><span>Dein Steuer- und Sozialabgaben-Satz (ungefähr)</span><span class="val" id="satz-out">40 %</span></div>
         <input id="satz" type="range" min="30" max="48" step="1" value="40">
       </div>
 
       <div class="slider-row">
-        <div class="lbl"><span>Arbeitsweg km (0,03 %-Regel, nur bei fester Arbeitsstätte)</span><span class="val" id="km-out">0 km</span></div>
+        <div class="lbl"><span>Dein Arbeitsweg (km einfach, falls du eine feste Arbeitsstätte hast)</span><span class="val" id="km-out">0 km</span></div>
         <input id="km" type="range" min="0" max="50" step="1" value="0">
       </div>
     </div>
 
     <div>
-      <p class="panel-label">Ergebnis</p>
+      <p class="panel-label">Was das für dich heißt</p>
       <div class="cards">
-        <div class="card">
-          <p class="c-lbl">Dein Aufwand / Monat</p>
-          <p class="c-num accent" id="out-employer-m">300 €</p>
-          <p class="c-det" id="out-employer-y">3.600 € / Jahr</p>
+        <div class="card hero">
+          <p class="c-lbl">Das kostet dich netto / Monat</p>
+          <p class="c-num accent" id="out-cost">271 €</p>
+          <p class="c-det" id="out-cost-det">für einen vollversicherten, gewarteten Wagen — nur Strom/Sprit kommt obendrauf</p>
         </div>
         <div class="card">
-          <p class="c-lbl">Sein Netto-Aufwand / Monat</p>
-          <p class="c-num" id="out-employee">220 €</p>
-          <p class="c-det" id="out-employee-detail">für einen vollversicherten, gewarteten Wagen</p>
+          <p class="c-lbl">Dein Vorteil / Monat</p>
+          <p class="c-num" id="out-vorteil">229 €</p>
+          <p class="c-det">gegenüber demselben Wagen privat geleast</p>
         </div>
         <div class="card">
-          <p class="c-lbl">Geldwerter Vorteil / Monat</p>
-          <p class="c-num" id="out-gwv">250 €</p>
-          <p class="c-det" id="out-gwv-detail">0,5 % vom Listenpreis</p>
+          <p class="c-lbl">Zuschuss von Rocket Search</p>
+          <p class="c-num" id="out-zuschuss">300 €</p>
+          <p class="c-det" id="out-zuschuss-det">3.600 € im Jahr, geschenkt</p>
         </div>
       </div>
     </div>
 
   </div>
 
-  <div class="geschenk">
-    <p class="g-lbl">Geschenk-Faktor</p>
-    <p id="out-geschenk"></p>
+  <div class="why">
+    <p class="g-lbl">Warum sich das für dich lohnt</p>
+    <p id="out-why"></p>
   </div>
 
-  <p class="foot">Annahme: klassische Gehaltsumwandlung (Eigenanteil aus dem Brutto-Fixum, voller geldwerter Vorteil versteuert). Der PHEV muss die 0,5-%-Auflagen erfüllen (≥ 80 km E-Reichweite oder ≤ 50 g CO₂/km), sonst greift die 1-%-Regel und das Modell kippt. Illustrative Werte — die exakten Netto-Euro hängen an Steuerklasse, Kirchensteuer und Sozialversicherung und gehören vor dem Rollout in die Lohnabrechnung. Keine Steuerberatung.</p>
+  <p class="foot">So funktioniert's steuerlich: Der Wagen läuft als Firmenwagen über Rocket Search. Deinen Anteil zahlst du aus dem Brutto, also vor Steuer und Sozialabgaben — dadurch kostet er dich netto weniger als der reine Betrag. Versteuern musst du nur den geldwerten Vorteil (beim Plug-in-Hybrid 0,5 % vom Listenpreis pro Monat). Die Zahlen hier sind eine Schätzung und hängen an deiner Steuerklasse und deinem Wohnort — die genauen Werte bekommst du von der Lohnbuchhaltung. Bei Fragen zum Modell sprich mit Tom.</p>
 
 </div>
 
 <script>
-  const eur = n => Math.round(n).toLocaleString('de-DE') + ' €';
-  const els = {
+  var ZUSCHUSS = 300;
+
+  var eur = function(n){ return Math.round(n).toLocaleString('de-DE') + ' \u20AC'; };
+  var els = {
     blp: document.getElementById('blp'), rate: document.getElementById('rate'),
-    zuschuss: document.getElementById('zuschuss'), satz: document.getElementById('satz'),
-    km: document.getElementById('km')
+    satz: document.getElementById('satz'), km: document.getElementById('km')
   };
-  function update() {
-    const blp = +els.blp.value, rate = +els.rate.value, zuschuss = +els.zuschuss.value;
-    const satz = +els.satz.value / 100, km = +els.km.value;
 
-    const eigenanteil = Math.max(0, rate - zuschuss);
-    const gwvPrivat = 0.005 * blp;
-    const gwvWeg = 0.0003 * (blp / 2) * km;
-    const gwvTotal = gwvPrivat + gwvWeg;
+  function update(){
+    var blp = +els.blp.value, rate = +els.rate.value;
+    var satz = +els.satz.value / 100, km = +els.km.value;
 
-    const eigenanteilNetto = eigenanteil * (1 - satz);
-    const steuerAufGwv = gwvTotal * satz;
-    const employeeNetto = eigenanteilNetto + steuerAufGwv;
-    const gehaltsalternativeNetto = zuschuss * (1 - satz);
+    var eigenanteil = Math.max(0, rate - ZUSCHUSS);
+    var gwvPrivat = 0.005 * blp;
+    var gwvWeg = 0.0003 * (blp / 2) * km;
+    var gwvTotal = gwvPrivat + gwvWeg;
+
+    var eigenanteilNetto = eigenanteil * (1 - satz);
+    var steuerAufGwv = gwvTotal * satz;
+    var cost = eigenanteilNetto + steuerAufGwv;
+    var vorteil = Math.max(0, rate - cost);
+    var gehaltAlternativeNetto = ZUSCHUSS * (1 - satz);
 
     document.getElementById('blp-out').textContent = eur(blp);
     document.getElementById('rate-out').textContent = eur(rate);
-    document.getElementById('zuschuss-out').textContent = eur(zuschuss);
     document.getElementById('satz-out').textContent = Math.round(satz * 100) + ' %';
     document.getElementById('km-out').textContent = km + ' km';
 
-    document.getElementById('out-employer-m').textContent = eur(zuschuss);
-    document.getElementById('out-employer-y').textContent = eur(zuschuss * 12) + ' / Jahr';
-    document.getElementById('out-employee').textContent = eur(employeeNetto);
-    document.getElementById('out-employee-detail').textContent = 'für einen ' + eur(rate) + '-Wagen, vollversichert + gewartet';
-    document.getElementById('out-gwv').textContent = eur(gwvTotal);
-    document.getElementById('out-gwv-detail').textContent = km > 0 ? '0,5 % + 0,03 % je km Arbeitsweg' : '0,5 % vom Listenpreis';
+    document.getElementById('banner-zuschuss').textContent = eur(ZUSCHUSS);
+    document.getElementById('out-cost').textContent = eur(cost);
+    document.getElementById('out-vorteil').textContent = eur(vorteil);
+    document.getElementById('out-zuschuss').textContent = eur(ZUSCHUSS);
+    document.getElementById('out-zuschuss-det').textContent = eur(ZUSCHUSS * 12) + ' im Jahr, geschenkt';
 
-    document.getElementById('out-geschenk').innerHTML =
-      'Gäbst du ihm die <b>' + eur(zuschuss) + '</b> einfach als Gehaltserhöhung, kämen netto nur <b>' + eur(gehaltsalternativeNetto) + '</b> bei ihm an. '
-      + 'So bekommt er einen Wagen im Marktwert von <b>' + eur(rate) + '</b> für nur <b>' + eur(employeeNetto) + ' netto</b> im Monat. '
-      + 'Der Hebel: dein Zuschuss plus der Steuervorteil aus der Umwandlung.';
+    document.getElementById('out-why').innerHTML =
+      'W\u00FCrde Rocket Search dir die ' + eur(ZUSCHUSS) + ' einfach als Gehaltserh\u00F6hung geben, k\u00E4men wegen Steuern und Abgaben nur rund <b>' + eur(gehaltAlternativeNetto) + '</b> netto bei dir an. '
+      + '\u00DCber den Firmenwagen holst du mehr raus: Du f\u00E4hrst einen Wagen im Marktwert von <b>' + eur(rate) + '</b> f\u00FCr nur <b>' + eur(cost) + ' netto</b> im Monat. '
+      + 'Der Grund: der Zuschuss von Rocket Search plus der Steuervorteil, weil du deinen Anteil aus dem Brutto zahlst.';
   }
-  Object.values(els).forEach(el => el.addEventListener('input', update));
+
+  for (var k in els){ if(els.hasOwnProperty(k)) els[k].addEventListener('input', update); }
   document.getElementById('today').textContent = new Date().toLocaleDateString('de-DE', {day:'2-digit', month:'long', year:'numeric'});
   update();
 </script>
